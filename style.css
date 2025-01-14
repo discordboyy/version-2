@@ -1903,7 +1903,9 @@ h3 {
         border-bottom-right-radius: 10px;
     }
     
-    
+    #special-member-container {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1917,5 +1919,9 @@ h3 {
     .web-error-img {
         width: 300px;
         height: 300px;
+    }
+
+    #special-member-container {
+        margin-top: 10px;
     }
 }
