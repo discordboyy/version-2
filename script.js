@@ -174,3 +174,21 @@ partnerContainers.forEach((container) => {
         }
     });
 });
+
+
+
+
+
+function set_active_item(index) {
+    const faqItems = document.querySelectorAll('.faq_item');  // Get all FAQ elements
+
+    // Loop through all FAQ items to toggle active state
+    faqItems.forEach((item, i) => {
+        if (i === index) {
+            item.classList.toggle('faq_item_active'); // Toggle class for active item
+        } else {
+            item.classList.remove('faq_item_active'); // Remove class for non-active items
+        }
+    });
+}
+

@@ -54,7 +54,15 @@ main {
     margin: auto;
 }
 
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+
+/* FOOTER */
+
+footer {
+    width: 1520px;
+    margin: auto;
+}
 
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -611,6 +619,7 @@ h3 {
 
 
 
+
 .bottom-menu{
     margin-top: 19px;
     margin-bottom: 19px;
@@ -726,7 +735,7 @@ h3 {
 
 .partner-carousel:active {
     cursor: grabbing; /* Change cursor when dragging */
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
     transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
     opacity: 1;      /* Visible by default */
 }
@@ -824,6 +833,402 @@ h3 {
 
 .member-description {
 }
+
+
+
+
+
+
+
+
+
+
+
+.container-content {
+    background-color: #171717;
+    border-radius: 45px;
+    width: 93.82%;
+    margin: auto;
+}
+
+#special-title-heading {
+    width: 93.27%;
+    margin: auto;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+.hide-scrollbar {
+    width: 93.27%;
+    margin: auto;
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Общие стили для FAQ элементов */
+.faq_item {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	background-color: #3334;
+	/* border: 2px solid #3330; */
+	border-radius: 25px;
+	height: fit-content;
+	padding: 40px 40px 40px 40px;
+	transition:all var(--transition-short) ease-in-out;
+	overflow: hidden;
+	margin-bottom: 10px;
+	cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.faq_item > .faq_item_top > .faq_item_button {
+	width: 34px;
+	height: 34px;
+    padding: 0%;
+	background-color: #474747;
+	color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.faq_item > .faq_item_top > .faq_item_button > .faq_item_button_label {
+	width: 100%;
+	height: 100%;
+	background-image: url("../media/images/css/plus-white.svg");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transform: rotate(0deg);
+	transform-origin: 50% 50%;
+}
+
+.faq_item_active {
+    transition: 0.2s ease-in-out;
+	background-color: #333;
+	/* border: 2px solid #3330; */
+}
+
+.faq_item_active:hover {
+    transition: 0.2s ease-in-out;
+	background-color: #333;
+	/* border: 2px solid #393939; */
+}
+
+.faq_item_active > .faq_item_top > .faq_item_button {
+    transition: 0.2s ease-in-out;
+	color: #fff;
+}
+.faq_item_active .faq_item_body_text{
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+	max-height: max-content;
+	height: max-content;
+	transition:all var(--transition-short) ease-in-out;
+}
+.faq_item_top {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	/* padding-bottom: 20px; */
+}
+
+.faq_ls_top_additional-info {
+	width: 100%;
+	justify-content: center;
+}
+
+.faq_item_left_side {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.faq_item_title_text_li {
+	color: #fff;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.faq_item_button {
+	border-radius: 10px;
+	transition: all var(--transition-short);
+}
+
+.faq_item_button_label {
+	display: flex;
+	transition: all var(--transition-short);
+}
+
+.faq_item_body_text {
+	display: flex;
+	flex-wrap: wrap;
+	max-height: 0px;
+	height: max-content;
+	overflow: hidden;
+	transition:all var(--transition-short) ease-in-out;
+}
+
+.faq_img_wrapper {
+
+}
+	.faq_img_wrapper img {
+		background-image: var(--image-fallback);
+		border-radius: 17px;
+	}
+
+.faq_item_body_text_block {
+	display: flex;
+	margin-bottom: 16px;
+}
+
+.faq_item_body_text_li {
+	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	padding-right: 160px;
+}
+
+.faq_item_body_text_li > a {
+	color: #ffcc6b;
+	text-decoration: none;
+}
+
+.faq_item_body_text_li > a:hover {
+	text-decoration: underline;
+}
+
+.faq_item_body_text_li_space {
+	height: 16px;
+}
+
+.faq_item_body_text_label {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
+	background-color: #ffcc6b;
+	border-radius: 50%;
+	margin-right: 16px;
+	position: relative;
+	top: -1px;
+}
+
+.faq_item_body_text_label_li {
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+	line-height: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1px;
+}
+
+.faq_item:hover {
+	background-color: #2f2f2f;
+	/* border: 2px solid #2f2f2f00; */
+}
+
+/* Стиль для заголовка и текста */
+.faq_item_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_item_left_side {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faq_item_button {
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    padding: 8px 15px;
+    border-radius: 50%;
+    background-color: transparent;  /* Кнопка с белым фоном */
+}
+
+.faq_item_button_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    color: white; /* Белый цвет */
+}
+
+.faq_item_title_text_li {
+    color: #ffffff;
+}
+
+/* Анимация появления текста */
+.faq_item_body_text {
+    color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Плавный эффект */
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Когда элемент активен, текст становится видимым */
+.faq_item_active .faq_item_body_text {
+    transition: 0.2s ease-in-out;
+    max-height: 500px;  /* Ограничение по высоте для анимации */
+    opacity: 1;
+}
+
+/* Анимация на кнопку при активном элементе */
+.faq_item_active .faq_item_button {
+    transition: 0.2s ease-in-out;
+    background-color: #fff; /* Белый фон для кнопки */
+}
+
+.faq_item_active .button-icon {
+    transition: 0.2s ease-in-out;
+    color: #333; /* Черный цвет знака */
+}
+
+
+
+
+/* FOOTER */
+
+.footer_deck {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 93.27%;
+    margin: auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_left_side {
+	display: flex;
+	flex-wrap: wrap;
+	/* min-height: 75px; */
+	gap: 16px;
+}
+
+.footer_ls_str_1 {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.footer_ls_str_1_text {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* 18+ */
+.footer_ls_str_1_text:has(.footer_ls_str_1_text_li_adult) {
+	margin: 0;
+}
+
+.footer_ls_str_1_text:first-child {
+	margin-left: 0px;
+}
+
+.footer_ls_str_1_text:last-child {
+	margin-right: 0px;
+}
+
+.footer_ls_str_1_text_li {
+    color: white;
+	font-size: 14px;
+	text-align: center;
+	line-height: 16px;
+	/* margin-bottom: 12px; */
+}
+
+.footer_ls_str_1_text_li > a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+	line-height: 20px;
+}
+
+.footer_ls_str_1_text_li > a:hover {
+	text-decoration: underline;
+}
+
+.footer_ls_str_1_text_li > a img {
+	width: 16px;
+	height: 16px;
+	margin-left: 6px;
+	position: relative;
+	top: -1px;
+}
+
+.footer_ls_str_1_text_li_adult {
+	box-sizing: border-box;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 48px;
+	font-weight: 500;
+	color: #282828;
+	border: 2px solid #282828;
+	border-radius: 15px;
+	position: relative;
+}
+
+::-webkit-focus-ring-color {
+	outline: 2px solid #282828;
+}
+
+.footer_ls_str_2 {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.footer_ls_str_2_text {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footer_ls_str_2_text:first-child {
+	margin-left: 0px;
+}
+
+.footer_ls_str_2_text:last-child {
+	margin-right: 0px;
+}
+
+.footer_ls_str_2_text_li {
+	font-size: 14px;
+	color: #808080;
+}
+
+.footer_right_side {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+	.footer_rs_soc_buttons {
+
+	}
+
+
 
 
 
@@ -1903,9 +2308,7 @@ h3 {
         border-bottom-right-radius: 10px;
     }
     
-    #special-member-container {
-        margin-top: 10px;
-    }
+    
 }
 
 @media screen and (max-width: 375px) {
@@ -1919,9 +2322,5 @@ h3 {
     .web-error-img {
         width: 300px;
         height: 300px;
-    }
-
-    #special-member-container {
-        margin-top: 10px;
     }
 }
