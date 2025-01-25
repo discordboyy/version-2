@@ -316,7 +316,7 @@ h3 {
 
 .over-name-description {
     height: 23px;
-    margin-top: 15%;
+    margin-top: 8px;
     color: #000000;
     font-size: 18.66px;
     letter-spacing: -2%;
@@ -386,10 +386,15 @@ h3 {
 
 .content-container-menu-under{
     margin: auto;
+    display: flex; /* Flexbox container */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Add space between the sections */
+    height: 330px;
     width: 300px;
 }
 
 .over-block-text {
+    justify-content: start;
     width: 187px;
     gap: 4.27px;
 }
@@ -412,8 +417,7 @@ h3 {
 }
 
 .under-block-description {
-    margin-top: 170px;
-    width: fill;
+    width: fit-content;
 }
 
 .under-block-description-h3 {
@@ -1231,6 +1235,116 @@ h3 {
 
 
 
+    
+    /* Затемнённый фон */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 5;
+        display: none;
+    }
+    
+    /* Баннер общий */
+    .banner {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.2); /* Полупрозрачный светлый фон */
+        color: #ffffff; /* Белый текст */
+        border-radius: 25px; /* Скруглённые края */
+        padding: 40px; /* Внутренние отступы */
+        text-align: start; /* Текст выравнивается слева */
+        z-index: 10; /* Высокий уровень слоя */
+        display: none; /* Скрыто по умолчанию */
+        flex-direction: column; /* Вертикальное размещение */
+        gap: 15px; /* Расстояние между дочерними элементами */
+        align-items: center; /* Центрирование элементов по горизонтали */
+        cursor: pointer; /* Курсор-указатель при наведении */
+        transition: 0.2s ease-in-out; /* Плавные переходы для всех изменений */
+        backdrop-filter: blur(10px); /* Эффект размытия заднего плана */
+        -webkit-backdrop-filter: blur(10px); /* Для Safari */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Полупрозрачная белая рамка */
+        width: 50%; /* Ширина 60% от экрана */
+        margin: 60px auto 30px; /* Центрирование сверху и снизу */
+        height: auto; /* Авто высота по содержимому */
+        box-shadow: 0px 22px 28px rgba(0, 0, 0, 0.1); /* Эффект тени */
+    }
+    
+
+    .banner-content {
+        height: auto;
+        width: 100%;
+    }
+
+    .banner:hover {
+        background-color: #333; /* Тёмный фон при наведении */
+        transition: 0.2s ease-in-out; /* Плавный переход фона */
+    }
+    
+    /* Центрация баннера */
+    #adBanner {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+    
+    #cookieBanner {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+    
+    /* Стили заголовков, текста и кнопок */
+    .banner-title {
+        text-align: left;
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+    
+    .banner-text {
+        color: white;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .banner-image {
+        color: white;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .banner-button {
+        padding: 10px 20px;
+        background-color: #636363;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: 0.2s ease;
+    }
+    
+    .banner-button:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    
+
+
+
+
+
+
+
+
+
+    
+
+
 
 
 
@@ -1310,7 +1424,7 @@ h3 {
     
     .over-name-description {
         height: 20px;
-        margin-top: 10%;
+        margin-top: 8px;
         font-size: 16px;
     }
     
@@ -1322,6 +1436,7 @@ h3 {
     
     .content-container-menu-under{
         width: 260px;
+        height: 330px;
     }
     
     
@@ -1379,6 +1494,14 @@ h3 {
     .button-icon {
         margin-top: -2px;
         margin-left: -1px;
+    }
+
+
+
+    #cookieBanner {
+        top: 102%;
+        left: 50%;
+        transform: translate(-50%, -30%);
     }
 }
 
@@ -1493,6 +1616,7 @@ h3 {
     }
     
     .content-container-menu-under{
+        height: 260px;
         width: 220px;
     }
     
@@ -1719,11 +1843,11 @@ h3 {
     
     .content-container-menu-under{
         width: 180px;
-        height: 180px;
+        height: 200px;
     }
     
     .under-block-description {
-        margin-top: 110px;
+        margin-top: auto;
     }
     
     .caption {
@@ -1896,7 +2020,7 @@ h3 {
     
     .content-container-menu-under {
         width: 280px;
-        height: auto;
+        height: 300px;
     }
     
     .wrapper-container-under {
@@ -1916,7 +2040,7 @@ h3 {
     }
     
     .under-block-description {
-        margin-top: 170px;
+        margin-top: auto;
     }
     
     .under-block-description-h3 {
