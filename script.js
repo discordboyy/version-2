@@ -192,4 +192,62 @@ function set_active_item(index) {
     });
 }
 
- 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const overlay = document.getElementById("overlay");
+    const adBanner = document.getElementById("adBanner");
+    const adCloseButton = document.getElementById("adCloseButton");
+    const cookieBanner = document.getElementById("cookieBanner");
+    const cookieAcceptButton = document.getElementById("cookieAcceptButton");
+
+    // Функция для показа баннеров с затемнением фона
+    function showBanners() {
+        overlay.style.display = "block";
+        adBanner.style.display = "flex";
+        cookieBanner.style.display = "flex";
+    }
+
+    // Скрыть рекламу
+    adCloseButton.addEventListener("click", () => {
+        adBanner.style.display = "none";
+        checkOverlay();
+    });
+
+    // Принять cookie
+    cookieAcceptButton.addEventListener("click", () => {
+        cookieBanner.style.display = "none";
+        document.cookie = "cookie_acc=ok; max-age=31536000; path=/";
+        checkOverlay();
+    });
+
+    // Убирает затемнённый фон, если все баннеры скрыты
+    function checkOverlay() {
+        if (adBanner.style.display === "none" && cookieBanner.style.display === "none") {
+            overlay.style.display = "none";
+        }
+    }
+
+    // Показываем баннеры (здесь можно настроить логику показа)
+    const cookieAccepted = document.cookie.includes("cookie_acc=ok");
+    if (!cookieAccepted) {
+        showBanners();
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const adCloseButton = document.getElementById("adCloseButton");
+    const cookieBanner = document.getElementById("cookieBanner");
+
+    adCloseButton.addEventListener("click", () => {
+        // Перемещаем баннер к координатам top: 30% и left: 50%
+        cookieBanner.style.top = "30%";
+        cookieBanner.style.left = "50%";
+
+        // Центрирование по горизонтали остаётся
+        cookieBanner.style.transform = "translate(-50%, -50%)";
+    });
+});
+
+
