@@ -2486,9 +2486,13 @@ h3 {
         font-size: 12px;
         margin-right: 16px;
     }
+
+    .banner-section {
+        top: -3410px;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 483px) {
     main {
         width: auto;
     }
@@ -2511,16 +2515,14 @@ h3 {
     }
     
     .banner-section {
-        top: -3410px;
+        top: -3380px;
     }
-    
 }
 
-@media screen and (max-width: 476px) {  
+@media screen and (max-width: 452px) {  
     .banner-section {
-        top: auto;
+        top: -3640px;
     }
-    
 }
 
 @media screen and (max-width: 375px) {
@@ -2536,3 +2538,13 @@ h3 {
         height: 300px;
     }
 }
+
+
+
+
+
+
+
+
+
+
