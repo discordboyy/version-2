@@ -1257,6 +1257,7 @@ h3 {
         position: relative;
         margin: 0 auto;
         z-index: 10;
+	transition: 0.2s ease-in-out;
     }
     
     /* Баннер общий */
@@ -1285,6 +1286,7 @@ h3 {
     
 
     .banner-content {
+	transition: 0.2s ease-in-out;
         height: auto;
         width: 100%;
     }
