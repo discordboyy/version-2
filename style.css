@@ -898,8 +898,8 @@ h3 {
 }
 
 .faq_item > .faq_item_top > .faq_item_button > .faq_item_button_label {
-	width: 100%;
-	height: 100%;
+	width: 34px;
+	height: 34px;
 	background-image: url("../media/images/css/plus-white.svg");
 	background-size: 20px 20px;
 	background-repeat: no-repeat;
@@ -1491,10 +1491,6 @@ h3 {
     .member-description {
     }
 
-    .button-icon {
-        margin-top: -2px;
-        margin-left: -1px;
-    }
 
 
 
@@ -1724,10 +1720,6 @@ h3 {
 
 
 
-    .button-icon {
-        margin-top: -2px;
-        margin-left: 0;
-    }
 }
 
 @media screen and (max-width: 1120px) {
@@ -1946,10 +1938,6 @@ h3 {
     }
 
 
-    .button-icon {
-        margin-top: 0;
-        margin-left: -0.5px;
-    }
 }
 
 @media screen and (max-width: 920px) {
@@ -2492,10 +2480,6 @@ h3 {
     }
     
 
-    .button-icon {
-        margin-top: -3px;
-        margin-left: 2px;
-    }
     
 }
 
@@ -2512,3 +2496,209 @@ h3 {
         height: 300px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* BANNERS & COOKIE STYLES FOR SCREENS */
+
+/* Surface Pro 7 */
+@media screen and (width: 912px) and (height: 1368px) {
+    .banner {
+        width: 50%;
+    }
+
+    #cookieBanner {
+        top: 65%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Ipad Pro */
+@media screen and (width: 1024px) and (height: 1366px) {
+    .banner {
+        width: 50%;
+    }
+
+    #cookieBanner {
+        top: 66%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Ipad Air */
+@media screen and (width: 820px) and (height: 1180px) {
+    .banner {
+        width: 60%;
+    }
+
+    #cookieBanner {
+        top: 70%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Ipad Mini */
+@media screen and (width: 768px) and (height: 1024px) {
+    .banner {
+        width: 60%;
+    }
+
+    #cookieBanner {
+        top: 76%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Samsung Galaxy S8+ */
+@media screen and (width: 360px) and (height: 740px) {
+    .banner {
+        width: 60%;
+    }
+
+    #cookieBanner {
+        top: 96%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Pixel 7 */
+@media screen and (width: 412px) and (height: 915px) {
+    .banner {
+        width: 60%;
+    }
+
+    #cookieBanner {
+        top: 81%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Pixel 7 */
+@media screen and (width: 412px) and (height: 915px) {
+    .banner {
+        width: 60%;
+    }
+
+    #cookieBanner {
+        top: 81%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Iphone 12 PRO MAX */
+@media screen and (width: 430px) and (height: 932px) {
+    .banner {
+        width: 60%;
+    }
+
+    #cookieBanner {
+        top: 81%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Iphone 12 PRO */
+@media screen and (width: 390px) and (height: 844px) {
+    .banner {
+        width: 60%;
+    }
+
+    #cookieBanner {
+        top: 88%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Iphone XR */
+@media screen and (width: 414px) and (height: 896px) {
+    .banner {
+        width: 60%;
+    }
+
+    #cookieBanner {
+        top: 83%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+
+/* Iphone SE */
+@media screen and (width: 375px) and (height: 667px) {
+    #cookieBanner {
+        top: 94%;
+    }
+
+    .banner-title {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+  }
+  
