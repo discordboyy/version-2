@@ -235,19 +235,3 @@ document.addEventListener("DOMContentLoaded", () => {
         showBanners();
     }
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-    const adCloseButton = document.getElementById("adCloseButton");
-    const cookieBanner = document.getElementById("cookieBanner");
-
-    adCloseButton.addEventListener("click", () => {
-        // Перемещаем баннер к координатам top: 30% и left: 50%
-        cookieBanner.style.top = "30%";
-        cookieBanner.style.left = "50%";
-
-        // Центрирование по горизонтали остаётся
-        cookieBanner.style.transform = "translate(-50%, -50%)";
-    });
-});
-
-
