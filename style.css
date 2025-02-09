@@ -2589,7 +2589,7 @@ b {
 
     .faq_item_active .faq_item_body_text {
         transition: 0.2s ease-in-out;
-        max-height: 700px;
+        max-height: 727px;
         opacity: 1;
     }
 }
