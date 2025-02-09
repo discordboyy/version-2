@@ -202,11 +202,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const cookieBanner = document.getElementById("cookieBanner");
     const cookieAcceptButton = document.getElementById("cookieAcceptButton");
 
+    // Функция для блокировки/разблокировки скролла
+    function toggleScroll(block) {
+        document.body.style.overflow = block ? "hidden" : "auto";
+    }
+
     // Функция для показа баннеров с затемнением фона
     function showBanners() {
         overlay.style.display = "block";
         adBanner.style.display = "flex";
         cookieBanner.style.display = "flex";
+        toggleScroll(true);
     }
 
     // Скрыть рекламу
@@ -222,10 +228,11 @@ document.addEventListener("DOMContentLoaded", () => {
         checkOverlay();
     });
 
-    // Убирает затемнённый фон, если все баннеры скрыты
+    // Убирает затемнённый фон и разблокирует скролл, если все баннеры скрыты
     function checkOverlay() {
         if (adBanner.style.display === "none" && cookieBanner.style.display === "none") {
             overlay.style.display = "none";
+            toggleScroll(false);
         }
     }
 
@@ -235,3 +242,4 @@ document.addEventListener("DOMContentLoaded", () => {
         showBanners();
     }
 });
+
